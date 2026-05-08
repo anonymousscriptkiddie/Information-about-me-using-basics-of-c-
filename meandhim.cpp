@@ -1,11 +1,3 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 #include <iostream>
 #include<string>
 #include<vector>
@@ -23,6 +15,11 @@ void geneticGambled() {
     char H = 50; //Half Fraternal twins
     char Z= 0; //A single baby
 }
+  void ages(){
+      string agers="16 and 17";
+      cout << "Zach and Precious ages are: " << agers << endl;
+  }
+    
 
 
 // using and typedef is used if u want an additional name
@@ -60,11 +57,46 @@ int main()
    getline(cin, userSelection);
 
     
-  
-    
+
    if (userSelection == "gender") {
        cout << "Zach= male and Precious= Female" << std::endl;
    }
+    else if (userSelection == "age") {
+        ages();
+    }
+    else if (userSelection == "numberofbabies") {
+        cout << "it supposed to be a gamble"<< endl;
+    }
+    int birthyearGap;
+    cout << "Guess Zach Birthyear: \n "<<endl;
+    cout << "choices: 2009 or 2008\n" <<endl;
+    cin >> birthyearGap;
+    
+    switch(birthyearGap){
+        case 2008:
+        cout << "its precious birthyear, therefore you are wrong" << endl;
+        break;
+        case 2009:
+        cout << "zach birth year is correct" << endl;
+        break;
+        default:
+        cout << "enter the choices, not any other" << endl;
+    }
+    int birthyearGap1;
+    cout << "guess Precious Birthyear: " << endl;
+    cout << "choices: 2009 or 2008\n" << endl;;
+    cin >>birthyearGap1;
+    
+    switch(birthyearGap1){
+        case 2008:
+        cout << "its precious birtyear and you are absolutely right" <<endl;
+        break;
+        case 2009:
+        cout << "its zach birthday therefore, u guess it wrong " << endl;
+        default:
+        cout << "enter the choices, not any other" << endl;
+    }
+   
     
     return 0;
 }
