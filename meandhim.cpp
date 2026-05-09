@@ -36,7 +36,16 @@ void geneticGambled() {
          cout << twinNumber[5] << "\n";
   }
     
-
+class Human {
+    public:
+    bool alive = true;
+    void living() {
+        cout << "these couple are both living\n";
+    }
+};
+class Couple :public Human{
+    
+};
 
 // using and typedef is used if u want an additional name
 using person_name = std::string; // can be used to declare a string
@@ -138,6 +147,9 @@ int main()
              std::cout << "identical twin\n"<< endl;
          }
      }
+     Couple couple;
+     cout << couple.alive <<  '\n';
+     couple.living();
      
     
     return 0;
